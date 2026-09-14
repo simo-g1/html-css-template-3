@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simo</title>
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Font Awesome -->
+  <link rel="preload" href="css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/all.min.css">
+  </noscript>
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="css/elzero.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="imgs/landing-image.png" fetchpriority="high">
+</head>
+
+<body>
+
+  <!-- Start Header -->
+  <div class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo flex-center">Simo</a>
+
+      <ul class="main-nav">
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#features">Features</a></li>
+        <li class="pop">
+          <a href="#">Other Links</a>
+          <!-- Start Megamenu -->
+          <div class="mega-menu">
+            <div class="image">
+              <img decoding="async" src="imgs/megamenu.png" alt="Mega Menu" loading="lazy" />
+            </div>
+            <ul class="links">
+              <li>
+                <a href="#testimonials"><i class="far fa-comments fa-fw" aria-hidden="true"></i> Testimonials</a>
+              </li>
+              <li>
+                <a href="#team"><i class="far fa-user fa-fw" aria-hidden="true"></i> Team Members</a>
+              </li>
+              <li>
+                <a href="#services"><i class="far fa-building fa-fw" aria-hidden="true"></i> Services</a>
+              </li>
+              <li>
+                <a href="#skills"><i class="far fa-check-circle fa-fw" aria-hidden="true"></i> Our Skills</a>
+              </li>
+              <li>
+                <a href="#work-steps"><i class="far fa-clipboard fa-fw" aria-hidden="true"></i> How It Works</a>
+              </li>
+            </ul>
+            <ul class="links">
+              <li>
+                <a href="#events"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i> Events</a>
+              </li>
+              <li>
+                <a href="#pricing"><i class="fas fa-server fa-fw" aria-hidden="true"></i> Pricing Plans</a>
+              </li>
+              <li>
+                <a href="#videos"><i class="far fa-play-circle fa-fw" aria-hidden="true"></i> Top Videos</a>
+              </li>
+              <li>
+                <a href="#stats"><i class="far fa-chart-bar fa-fw" aria-hidden="true"></i> Stats</a>
+              </li>
+              <li>
+                <a href="#discount"><i class="fas fa-percent fa-fw" aria-hidden="true"></i> Request A Discount</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Megamenu -->
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Start landing -->
+  <div class="landing">
+    <div class="container">
+      <div class="text">
+        <h1>Welcome, To Simo World</h1>
+        <p>
+          Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing,
+          Stories and Events
+        </p>
+      </div>
+      <div class="image"> <img fetchpriority="high" decoding="async" src="imgs/landing-image.png" alt="main photo">
+      </div>
+      <a href="#articles" aria-label="Scroll down to articles">
+        <i class="fas fa-angle-double-down fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+  <!-- End landing -->
+
+  <!-- Start Articles -->
+  <div class="articles" id="articles">
+    <div class="container">
+
+      <div class="main-heading flex-center">
+        <h2>Articles</h2>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <img decoding="async" src="imgs/cat-01.jpg" alt="Article thumbnail" loading="lazy">
+          <div class="title">
+            <h3>Getting Started With HTML</h3>
+            <p>A beginner-friendly look at HTML fundamentals and why they're the backbone of every website.</p>
+          </div>
+          <div class="foot">
+            <a href="#header">
+              <span class="visually-hidden"> about Getting Started With HTML</span>
+              Read More</a>
+            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img decoding="async" src="imgs/cat-02.jpg" alt="Article thumbnail" loading="lazy">
+          <div class="title">
+            <h3>Mastering CSS Flexbox</h3>
+            <p>How Flexbox changed the way I build layouts, with practical examples from my own projects.</p>
+          </div>
+          <div class="foot">
+            <a href="#header">
+              <span class="visually-hidden"> about Mastering CSS Flexbox</span>
+              Read More</a>
+            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img decoding="async" src="imgs/cat-03.jpg" alt="Article thumbnail" loading="lazy">
+          <div class="title">
+            <h3>Understanding The Box Model</h3>
+            <p>The concept that finally made CSS click for me, explained in simple terms.</p>
+          </div>
+          <div class="foot">
+            <a href="#header"><span class="visually-hidden"> about Understanding The Box Model</span>
+              Read More</a>
+            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img decoding="async" src="imgs/cat-04.jpg" alt="Article thumbnail" loading="lazy">
+          <div class="title">
+            <h3>JavaScript Basics</h3>
+            <p>My notes on variables, functions, and loops as I work through the fundamentals.</p>
+          </div>
+          <div class="foot">
+            <a href="#header">
+              <span class="visually-hidden"> about JavaScript Basics</span>
+              Read More</a>
+            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img decoding="async" src="imgs/cat-05.jpg" alt="Article thumbnail" loading="lazy">
+          <div class="title">
+            <h3>Responsive Design Tips</h3>
+            <p>Small techniques that make a huge difference across phones, tablets, and desktops.</p>
+          </div>
+          <div class="foot">
+            <a href="#header">
+              <span class="visually-hidden"> about Responsive Design Tips</span>
+              Read More</a>
+            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img decoding="async" src="imgs/cat-06.jpg" alt="Article thumbnail" loading="lazy">
+          <div class="title">
+            <h3>Git And GitHub For Beginners</h3>
+            <p>What I'm learning about version control and why every developer needs it.</p>
+          </div>
+          <div class="foot">
+            <a href="#header">
+              <span class="visually-hidden"> about Git And GitHub For Beginners</span>
+              Read More</a>
+            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img decoding="async" src="imgs/cat-07.jpg" alt="Article thumbnail" loading="lazy">
+          <div class="title">
+            <h3>Improving Website Performance</h3>
+            <p>Simple changes that noticeably speed up page load times.</p>
+          </div>
+          <div class="foot">
+            <a href="#header">
+              <span class="visually-hidden"> about Improving Website Performance</span>
+              Read More</a>
+            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img decoding="async" src="imgs/cat-08.jpg" alt="Article thumbnail" loading="lazy">
+          <div class="title">
+            <h3>Web Accessibility Essentials</h3>
+            <p>Why building for everyone matters, and easy wins to get started.</p>
+          </div>
+          <div class="foot">
+            <a href="#header">
+              <span class="visually-hidden"> about Web Accessibility Essentials</span>
+              Read More</a>
+            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Articles  -->
+  <!-- Start Gallery -->
+  <div class="gallery" id="gallery">
+    <div class="zigzag-top"></div>
+    <div class="container">
+      <div class="main-heading flex-center">
+        <h2>Gallery</h2>
+      </div>
+      <div class="boxes">
+        <div class="box"><img decoding="async" src="imgs/gallery-01.png" alt="gallery" loading="lazy"></div>
+        <div class="box"><img decoding="async" src="imgs/gallery-02.png" alt="gallery" loading="lazy"></div>
+        <div class="box"><img decoding="async" src="imgs/gallery-03.jpg" alt="gallery" loading="lazy"></div>
+        <div class="box"><img decoding="async" src="imgs/gallery-04.png" alt="gallery" loading="lazy"></div>
+        <div class="box"><img decoding="async" src="imgs/gallery-05.jpg" alt="gallery" loading="lazy"></div>
+        <div class="box"><img decoding="async" src="imgs/gallery-06.png" alt="gallery" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Gallery -->
+  <!-- Start Features -->
+  <div class="features" id="features">
+    <div class="main-heading flex-center">
+      <h2>Features</h2>
+    </div>
+    <div class="container">
+      <div class="card quality">
+        <div class="img-holder">
+          <img decoding="async" src="imgs/features-01.jpg" alt="quality" loading="lazy">
+        </div>
+        <h2>Quality</h2>
+        <p>Every project I build gets tested carefully across devices, so it looks and works the way it should.</p>
+        <a href="#">More</a>
+      </div>
+      <div class="card time">
+        <div class="img-holder">
+          <img decoding="async" src="imgs/features-02.jpg" alt="time" loading="lazy">
+        </div>
+        <h2>Time</h2>
+        <p>I plan my learning and projects with clear milestones, so nothing gets left half-finished.</p>
+        <a href="#">More</a>
+      </div>
+      <div class="card passion">
+        <div class="img-holder">
+          <img decoding="async" src="imgs/features-03.jpg" alt="passion" loading="lazy">
+        </div>
+        <h2>Passion</h2>
+        <p>Web development isn't just something I'm learning, it's something I genuinely enjoy working on every day.</p>
+        <a href="#">More</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Features -->
+
+  <!-- Start Testimonials -->
+  <div class="testimonials" id="testimonials">
+    <div class="main-heading flex-center">
+      <h2>Testimonials</h2>
+    </div>
+    <div class="container">
+      <div class="card-holder">
+        <div class="card">
+          <img decoding="async" src="imgs/avatar-01.png" alt="avatar member 1" loading="lazy">
+          <h3>Mohamed Farag</h3>
+          <span class="job">Full Stack Developer</span>
+          <div class="stars">
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+          </div>
+          <p>Great to see someone this dedicated to learning the fundamentals properly instead of rushing through
+            tutorials.</p>
+        </div>
+      </div>
+
+      <div class="card-holder">
+        <div class="card">
+          <img decoding="async" src="imgs/avatar-02.png" alt="avatar member 2" loading="lazy">
+          <h3>Mohamed Ibrahim</h3>
+          <span class="job">Full Stack Developer</span>
+          <div class="stars">
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+          </div>
+          <p>Clean code, careful attention to detail, and a real understanding of what's happening under the hood.</p>
+        </div>
+      </div>
+
+      <div class="card-holder">
+        <div class="card">
+          <img decoding="async" src="imgs/avatar-03.png" alt="avatar member 3" loading="lazy">
+          <h3>Shady Nabil</h3>
+          <span class="job">Full Stack Developer</span>
+          <div class="stars">
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+          </div>
+          <p>Watching this project come together has been impressive, especially the accessibility touches most
+            beginners skip.</p>
+        </div>
+      </div>
+
+      <div class="card-holder">
+        <div class="card">
+          <img decoding="async" src="imgs/avatar-04.png" alt="avatar member 4" loading="lazy">
+          <h3>Amr Hendawy</h3>
+          <span class="job">Full Stack Developer</span>
+          <div class="stars">
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+          </div>
+          <p>Great to see someone this dedicated to learning the fundamentals properly instead of rushing through
+            tutorials.</p>
+        </div>
+      </div>
+
+      <div class="card-holder">
+        <div class="card">
+          <img decoding="async" src="imgs/avatar-05.png" alt="avatar member 5" loading="lazy">
+          <h3>Sherief Ashraf</h3>
+          <span class="job">Full Stack Developer</span>
+          <div class="stars">
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+          </div>
+          <p>Clean code, careful attention to detail, and a real understanding of what's happening under the hood.</p>
+        </div>
+      </div>
+
+      <div class="card-holder">
+        <div class="card">
+          <img decoding="async" src="imgs/avatar-06.png" alt="avatar member 6" loading="lazy">
+          <h3>Osama Mohamed</h3>
+          <span class="job">Full Stack Developer</span>
+          <div class="stars">
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star" aria-hidden="true"></i>
+            <i class="filled fas fa-star-half-alt" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+          </div>
+          <p>Watching this project come together has been impressive, especially the accessibility touches most
+            beginners skip.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonials -->
+
+  <!-- Start Team -->
+  <div class="team" id="team">
+    <div class="main-heading flex-center">
+      <h2>Team Members</h2>
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="data">
+          <img decoding="async" src="imgs/team-01.jpg" alt="Team Member 1" loading="lazy">
+          <div class="social">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Ahmed Tarek</h3>
+          <p>Studying JavaScript alongside HTML and CSS</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="data">
+          <img decoding="async" src="imgs/team-02.jpg" alt="Team Member 2" loading="lazy">
+          <div class="social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Yara Mostafa</h3>
+          <p>Focused on UI design and accessibility</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="data">
+          <img decoding="async" src="imgs/team-03.jpg" alt="Team Member 3" loading="lazy">
+          <div class="social">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Discord"><i class="fab fa-discord" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Karim Adel</h3>
+          <p>Learning backend development with PHP</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="data">
+          <img decoding="async" src="imgs/team-04.jpg" alt="Team Member 4" loading="lazy">
+          <div class="social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Ahmed Tarek</h3>
+          <p>Studying JavaScript alongside HTML and CSS</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="data">
+          <img decoding="async" src="imgs/team-05.png" alt="Team Member 5" loading="lazy">
+          <div class="social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Yara Mostafa</h3>
+          <p>Focused on UI design and accessibility</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="data">
+          <img decoding="async" src="imgs/team-06.png" alt="Team Member 6" loading="lazy">
+          <div class="social">
+            <a href="#" aria-label="Snapchat"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Discord"><i class="fab fa-discord" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Karim Adel</h3>
+          <p>Learning backend development with PHP</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="data">
+          <img decoding="async" src="imgs/team-07.jpg" alt="Team Member 7" loading="lazy">
+          <div class="social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Ahmed Tarek</h3>
+          <p>Studying JavaScript alongside HTML and CSS</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="data">
+          <img decoding="async" src="imgs/team-08.jpg" alt="Team Member 8" loading="lazy">
+          <div class="social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Yara Mostafa</h3>
+          <p>Focused on UI design and accessibility</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Team -->
+  <!-- Start Services -->
+  <div class="services" id="services">
+    <div class="zigzag-top"></div>
+    <div class="main-heading flex-center">
+      <h2>Services</h2>
+    </div>
+    <div class="container">
+      <div class="box">
+        <i class="fas fa-user-shield fa-4x" aria-hidden="true"></i>
+        <h3>Security</h3>
+        <div class="info">
+          <a href="#" aria-label="Security Details">Details</a>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-tools fa-4x" aria-hidden="true"></i>
+        <h3>Fixing Issues</h3>
+        <div class="info">
+          <a href="#" aria-label="Fixing Issues Details">Details</a>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-map-marked-alt fa-4x" aria-hidden="true"></i>
+        <h3>Location</h3>
+        <div class="info">
+          <a href="#" aria-label="Location Details">Details</a>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-laptop-code fa-4x" aria-hidden="true"></i>
+        <h3>Coding</h3>
+        <div class="info">
+          <a href="#" aria-label="Coding Details">Details</a>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-palette fa-4x" aria-hidden="true"></i>
+        <h3>Design</h3>
+        <div class="info">
+          <a href="#" aria-label="Design Details">Details</a>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-bullhorn fa-4x" aria-hidden="true"></i>
+        <h3>Marketing</h3>
+        <div class="info">
+          <a href="#" aria-label="Marketing Details">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services -->
+  <!-- Start Our Skills -->
+  <div class="skills" id="skills">
+    <div class="main-heading flex-center">
+      <h2>Our Skills</h2>
+    </div>
+    <div class="container">
+      <img decoding="async" src="imgs/skills.png" alt="skills" loading="lazy">
+      <div class="progres">
+        <h3>HTML</h3>
+        <div class="bar"><span data-width="80%" style="width: 0%"></span></div>
+        <h3>CSS</h3>
+        <div class="bar"><span data-width="85%" style="width: 0%"></span></div>
+        <h3>JavaScript</h3>
+        <div class="bar"><span data-width="70%" style="width: 0%"></span></div>
+        <h3>Python</h3>
+        <div class="bar"><span data-width="80%" style="width: 0%"></span></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Our Skills -->
+  <!-- Start work -->
+  <div class="work-steps" id="work-steps">
+    <div class="main-heading flex-center">
+      <h2>How It Works ?</h2>
+    </div>
+    <div class="container">
+      <img decoding="async" src="imgs/work-steps.png" alt="work-steps" class="image" loading="lazy">
+      <div class="boxes">
+        <div class="box">
+          <img decoding="async" src="imgs/work-steps-1.png" alt="Business Analysis work-steps" loading="lazy"
+            style="opacity: 0;" data-op="1">
+          <div class="info">
+            <h3>Business Analysis</h3>
+            <p>I start by understanding exactly what a design or feature needs to do before writing any code.</p>
+          </div>
+        </div>
+        <div class="box">
+          <img decoding="async" src="imgs/work-steps-2.png" alt="Architecture work-steps" loading="lazy"
+            style="opacity: 0;" data-op="1">
+          <div class="info">
+            <h3>Architecture</h3>
+            <p>Then I plan the HTML structure and CSS approach so the project stays organized as it grows.</p>
+          </div>
+        </div>
+        <div class="box">
+          <img decoding="async" src="imgs/work-steps-3.png" alt="Developement work-steps" loading="lazy"
+            style="opacity: 0;" data-op="1">
+          <div class="info">
+            <h3>Developement</h3>
+            <p>Finally, I build it step by step, testing along the way to catch issues early.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Work -->
+  <!-- Start Events -->
+  <div class="events" id="events">
+    <div class="dots dots-up"></div>
+    <div class="dots dots-down"></div>
+    <div class="main-heading flex-center">
+      <h2>Latest Events</h2>
+    </div>
+    <div class="container">
+      <img decoding="async" src="imgs/events.png" alt="Developement work-steps" loading="lazy">
+      <div class="info">
+        <div class="time">
+          <div class="unit">
+            <span class="days">0</span>
+            <span>Days</span>
+          </div>
+          <div class="unit">
+            <span class="hours">0</span>
+            <span>Hours</span>
+          </div>
+          <div class="unit">
+            <span class="minutes">0</span>
+            <span>Minutes</span>
+          </div>
+          <div class="unit">
+            <span class="seconds">0</span>
+            <span>Seconds</span>
+          </div>
+        </div>
+        <h2>Front-End Study Session</h2>
+        <p>A weekly session where I review what I've learned, tackle new challenges, and share progress on ongoing
+          projects.</p>
+      </div>
+      <div class="mail">
+        <form action="">
+          <label for="email" hidden>email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email">
+          <input type="submit" value="Subscripe">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Events -->
+  <!-- Start Pricing  -->
+  <div class="pricing" id="pricing">
+    <div class="dots dots-up"></div>
+    <div class="dots dots-down"></div>
+    <div class="main-heading flex-center">
+      <h2>Pricing Plans</h2>
+    </div>
+    <div class="container">
+
+      <div class="card">
+        <div class="title">Basic</div>
+        <img decoding="async" src="imgs/hosting-basic.png" alt="hosting basic" loading="lazy">
+        <div class="price">
+          <h2 class="amount">$15</h2>
+          <p class="time">Per Month</p>
+        </div>
+        <ul>
+          <li>10GB HDD Space</li>
+          <li>5 Email Addresses</li>
+          <li>2 Subdomains</li>
+          <li>4 Databases</li>
+          <li>Basic Support</li>
+        </ul>
+        <a href="#">Choose Plan</a>
+      </div>
+
+      <div class="card popular">
+        <div class="label" style="transform: translateY(-200px);" data-tr="translateY(0)">
+          Most Popular
+        </div>
+        <div class="title">Advanced</div>
+        <img decoding="async" src="imgs/hosting-advanced.png" alt="hosting advanced" loading="lazy">
+        <div class="price">
+          <h2 class="amount">$25</h2>
+          <p class="time">Per Month</p>
+        </div>
+        <ul>
+          <li>20GB HDD Space</li>
+          <li>10 Email Addresses</li>
+          <li>5 Subdomains</li>
+          <li>8 Databases</li>
+          <li>Advanced Support</li>
+        </ul>
+        <a href="#">Choose Plan</a>
+      </div>
+      <div class="card">
+        <div class="title">Professional</div>
+        <img decoding="async" src="imgs/hosting-professional.png" alt="hosting professional" loading="lazy">
+        <div class="price">
+          <h2 class="amount">$45</h2>
+          <p class="time">Per Month</p>
+        </div>
+        <ul>
+          <li>50GB HDD Space</li>
+          <li>20 Email Addresses</li>
+          <li>10 Subdomains</li>
+          <li>20 Databases</li>
+          <li>Professional Support</li>
+        </ul>
+        <a href="#">Choose Plan</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Pricing  -->
+  <!-- Start Videos  -->
+  <div class="videos" id="videos">
+    <div class="main-heading flex-center">
+      <h2>Top Videos</h2>
+    </div>
+    <div class="container">
+      <div class="holder">
+        <div class="list">
+          <div class="heading">
+            <span>Top Videos</span>
+            <i class="fas fa-random"></i>
+          </div>
+          <div class="box">
+            <p>How To Create Sub Domain</p>
+            <span>05:18</span>
+          </div>
+          <div class="box">
+            <p>Playing With The DNS</p>
+            <span>03:18</span>
+          </div>
+          <div class="box">
+            <p>Everything About The Virtual Hosts</p>
+            <span>05:25</span>
+          </div>
+          <div class="box">
+            <p>How To Monitor Your Website</p>
+            <span>04:16</span>
+          </div>
+          <div class="box">
+            <p>Uncharted Beating The Last Boss</p>
+            <span>07:48</span>
+          </div>
+          <div class="box">
+            <p>Ys Oath In Felghana Overview</p>
+            <span>03:12</span>
+          </div>
+          <div class="box">
+            <p>Ys Series All Games Ending</p>
+            <span>08:10</span>
+          </div>
+        </div>
+        <div class="preview">
+          <img decoding="async" src="imgs/video-preview.jpg" alt="video game preview" loading="lazy">
+          <p>Everything About The Virtual Hosts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Videos  -->
+
+  <!-- Start Stats  -->
+  <div class="stats" id="stats">
+    <h2 class="title">Our Awesome Stats</h2>
+    <div class="container">
+      <div class="box">
+        <i class="fas fa-user fa-2x"></i>
+        <span class="num" data-goal="150">0</span>
+        <p>Clients</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-code fa-2x"></i>
+        <span class="num" data-goal="135">0</span>
+        <p>Projects</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-globe-americas fa-2x"></i>
+        <span class="num" data-goal="50">0</span>
+        <p>Countries</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-money-bill-alt fa-2x"></i>
+        <span class="num" data-goal="500">0</span>
+        <p>Money</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Stats  -->
+  <!-- Start Discount  -->
+  <div class="discount" id="discount">
+    <div class="image">
+      <div class="content">
+        <h2>Get In Touch</h2>
+        <p>Have a project in mind or want to collaborate on something? I'd love to hear from you and see how I can
+          help.</p>
+        <img decoding="async" src="imgs/discount.png" alt="discount hand photo" loading="lazy">
+      </div>
+    </div>
+    <div class="form">
+      <div class="content">
+        <h2>Let's Work Together</h2>
+        <form action="">
+          <label for="name" hidden>Your Name</label>
+          <input type="text" placeholder="Your Name" id="name" name="name">
+          <label for="email" hidden>Your Email</label>
+          <input type="email" placeholder="Your Email" id="email" name="email">
+          <label for="phone" hidden>Your phone</label>
+          <input type="text" placeholder="Your phone" id="phone" name="phone">
+          <textarea placeholder="Tell Us About Your Needs"></textarea>
+          <input value="Send" type="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Discount  -->
+  <!-- Start footer  -->
+  <footer>
+    <div class="container">
+      <div class="main">
+        <h2>Simo</h2>
+        <div class="social">
+          <a href="https://www.facebook.com/share/1KHeyGSQJU/" aria-label="Facebook" class="facebook" target="_blank"
+            rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@hero_brounyx?_r=1&_t=ZS-99j4g7UpD41" aria-label="Twitter" class="tiktok"
+            target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/simo-not-086654399" aria-label="LinkedIn" class="linkedin"
+            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        </div>
+        <p class="text">Front-end developer in progress, learning HTML, CSS, and JavaScript step by step. This site is
+          one of my
+          practice
+          projects on the road to becoming a full-stack developer.</p>
+      </div>
+      <div class="links-box">
+        <ul class="links">
+          <li><a href="https://github.com/simo-g1"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://wa.me/201010356493"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+          <li><a href="https://wa.me/201016806605"><i class="fab fa-whatsapp"></i> WhatsApp 2</a></li>
+          <li><a href="https://www.instagram.com/simo_g976"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-discord"></i> Discord</a></li>
+        </ul>
+      </div>
+      <div class="address">
+        <div class="line">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          <p>Egypt, Mansoura, Al Drasat Street</p>
+        </div>
+        <div class="line">
+          <i class="far fa-clock fa-fw"></i>
+          <p>Business Hours: From 10:00 To 18:00</p>
+        </div>
+        <div class="line">
+          <i class="fas fa-phone fa-fw"></i>
+          <p>+201010356493 <br> +201016806605</p>
+        </div>
+      </div>
+      <div class="footer-gallery">
+        <img decoding="async" src="imgs/gallery-01.png" alt="gallery image 1" loading="lazy">
+        <img decoding="async" src="imgs/gallery-02.png" alt="gallery image 2" loading="lazy">
+        <img decoding="async" src="imgs/gallery-03.jpg" alt="gallery image 3" loading="lazy">
+        <img decoding="async" src="imgs/gallery-04.png" alt="gallery image 4" loading="lazy">
+        <img decoding="async" src="imgs/gallery-05.jpg" alt="gallery image 5" loading="lazy">
+        <img decoding="async" src="imgs/gallery-06.png" alt="gallery image 6" loading="lazy">
+      </div>
+    </div>
+    <p class="copy-right">Made With <i class="fas fa-heart"></i> By simo</p>
+  </footer>
+  <!-- End footer  -->
+  <script src="js/my.js"></script>
+</body>
+
+</html>
