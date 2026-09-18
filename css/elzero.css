@@ -2057,7 +2057,7 @@ footer {
   position: absolute;
   inset: 0;
   /* بدل width / height / top / left */
-  background: #c2c2c2;
+  background: var(--section-background);
   overflow: hidden;
   z-index: 0;
   pointer-events: none;
