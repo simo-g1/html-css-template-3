@@ -12,7 +12,7 @@ let statsSection = document.querySelector(".stats");
 let started = false; // Function Started ? No
 window.onscroll = function () {
     // الجزء بتاع Skills
-    if (window.scrollY >= section.offsetTop - 250) {
+    if (window.scrollY >= section.offsetTop - 200) {
         progressSpans.forEach((span) => {
             span.style.width = span.dataset.width;
         });
