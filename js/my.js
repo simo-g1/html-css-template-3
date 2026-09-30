@@ -77,3 +77,37 @@ let counter = setInterval(() => {
     document.querySelector(".minutes").innerHTML = minutes > 999 ? "+999" : (minutes < 10 ? `0${minutes}` : minutes);
     document.querySelector(".seconds").innerHTML = seconds > 999 ? "+999" : (seconds < 10 ? `0${seconds}` : seconds);
 }, 1000);
+
+document.addEventListener("DOMContentLoaded", function () {
+    let userInput = document.querySelector("[name='user-name']");
+    let emailInput = document.querySelector("[name='user-email']");
+    let phoneInput = document.querySelector("[name='user-phone']");
+    let form = document.querySelector(".content form");
+
+    if (form) {
+        form.onsubmit = function (e) {
+            let userValid = false;
+            let emailValid = false;
+            let phoneValid = false;
+
+            if (userInput.value.trim() !== "" && userInput.value.length >= 3 && userInput.value.length <= 45) {
+                userValid = true;
+            }
+
+            if (emailInput.value.trim() !== "" && emailInput.value.length >= 10 && emailInput.value.length <= 50) {
+                emailValid = true;
+            }
+
+            if (phoneInput.value.trim() !== "" && phoneInput.value.length >= 10 && phoneInput.value.length <= 15) {
+                phoneValid = true;
+            }
+
+            if (!userValid || !emailValid || !phoneValid) {
+                e.preventDefault();
+                console.log("هناك بيانات غير صحيحة، تم منع الإرسال.");
+            } else {
+                console.log("البيانات صحيحة تماماً!");
+            }
+        };
+    }
+});
